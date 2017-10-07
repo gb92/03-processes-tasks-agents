@@ -75,7 +75,7 @@ end
 
 ExUnit.start
 defmodule TestEx03 do
-  use ExUnit.Case
+  use ExUnit.Case, async: false
   import Ex03
 
   test "pmap with 1 process" do
